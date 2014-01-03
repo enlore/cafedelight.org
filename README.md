@@ -1,12 +1,4 @@
-App Skeleton
-============
-## Using BS, Jade, and Less and built for Express
+cafedelight.org
+===============
 
-_But Nick, express comes with it's own app skel generator!_
-
-I know, but it doesn't install Bootstrap! So I put this together for quick and
-dirty cloning.
-
-Assuming you have node and npm installed:
-
-    git clone http://github.com/enlore/express-bs-skele app; cd app; npm install;
+Client site for Cafe de Light
