@@ -1,7 +1,7 @@
 var express     = require('express')
-    , routes    = require('./routes')
-    , http      = require('http')
-    , path      = require('path')
+  , routes    = require('./routes')
+  , http      = require('http')
+  , path      = require('path')
 
 var app = express()
 
@@ -23,19 +23,19 @@ app.use(express.session())
 app.use(app.router)
 
 var less_opts = {
-   src              : path.join(__dirname, 'static'),
-   compress         : false,
-   debug            : true,
-   paths            : [path.join(__dirname, 'static')],
-   once             : false,
-   dest             : path.join(__dirname, 'static'),
-   dumpLineNumbers  : 'comments',
-   sourceMap        : true,
+    src              : path.join(__dirname, 'static'),
+    compress         : false,
+    debug            : true,
+    paths            : [path.join(__dirname, 'static')],
+    once             : false,
+    dest             : path.join(__dirname, 'static'),
+    dumpLineNumbers  : 'comments',
+    sourceMap        : true,
 }
 
 // dev config
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler())
+    app.use(express.errorHandler())
 }
 
 // pro config
@@ -53,5 +53,5 @@ app.use(express.static(path.join(__dirname, 'static')))
 app.get('/', routes.index)
 
 http.createServer(app).listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + app.get('port'))
+    console.log('Express server listening on port ' + app.get('port'))
 })
