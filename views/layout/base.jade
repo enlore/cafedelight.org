@@ -65,8 +65,10 @@ body
   script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
   script.
     window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')
-  script(src="/js/vendor/bootstrap.min.js")
-  script(src="/js/main.js")
+  script(type="text/javascript", src="/js/vendor/bootstrap.min.js")
+  script(type="text/javascript",
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4rqsO4cDeLY8_yZrUTT2dLqll2yJB3EU&sensor=false")
+  script(type="text/javascript", src="/js/main.js")
 
   script.
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
