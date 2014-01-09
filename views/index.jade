@@ -1,5 +1,20 @@
 extends layout/base
 block body
-  .container
+  .container.banner
+
+  .container.about-us
     .row
-      h1.col-sm-12 herro
+      .col-sm-8
+        img.img-responsive(src="http://placehold.it/700x400")
+
+      .col-sm-4
+        p. We are a coffee shop.  We sell coffee.  It's cool.
+
+  .container.menu
+    .row
+      .col-sm-12
+
+  .container.location
+    .row
+      .col-sm-12
+        #gmap.gmap-container
