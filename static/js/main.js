@@ -1,11 +1,19 @@
 function mapInit() {
-var mapOpts = {
-    center: new google.maps.LatLng(36.5290495, -87.35296590000002),
-    zoom: 14
+    var lat_lng = [36.52855210000001, -87.3528402]
+
+    var mapOpts = {
+            center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
+            zoom: 14
+        }
+    var map = new google.maps.Map(document.getElementById("gmap"), mapOpts)
+
+    var markerOpts = {
+        position: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
+        map: map
+    }
+    var marker = new google.maps.Marker(markerOpts)
 }
 
-var map = new google.maps.Map(document.getElementById("gmap"),
-    mapOpts)
-}
+
 
 google.maps.event.addDomListener(window, 'load', mapInit)
