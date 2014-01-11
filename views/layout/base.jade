@@ -37,37 +37,39 @@ body
       improve your browsing experience (and make the lives of developers
       like me a ton easier).
 
-  nav.nav.navbar-default.navbar-fixed-top
-    .container
-      .navbar-header
-        button.navbar-toggle(type="button", data-toggle="collapse", data-target="#header-nav")
-          span.sr-only Toggle nav
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand.visible-xs(href="/") Cafe de Light
+  .wrappa
+    nav.nav.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type="button", data-toggle="collapse", data-target="#header-nav")
+            span.sr-only Toggle nav
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.visible-xs(href="/") Cafe de Light
 
-      #header-nav.collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-left
-          li.active
-            a(href="#home") Home
-          li
-            a(href="#about-us") About Us
+        #header-nav.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-left
+            li.active
+              a(href="#home") Home
+            li
+              a(href="#about-us") About Us
 
-        ul.nav.navbar-nav.navbar-right
-          li
-            a(href="#menu") Menu
-          li
-            a(href="#location") Location
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="#menu") Menu
+            li
+              a(href="#location") Location
 
-  block body
+    block body
 
-  .container.footer
-    .row
-      .col-sm-6
-        p Lovingly hand-crafted by <a href="http://elcreativegroup.com">E|L Creative</a>
-      .col-sm-6
-        p.align-right &copy; 2013 Cafe de Light, E|L Creative Group
+    .footer
+      .container
+        .row
+          .col-sm-6
+            p Lovingly hand-crafted by <a href="http://elcreativegroup.com">E|L Creative</a>
+          .col-sm-6
+            p.align-right &copy; 2013 Cafe de Light, E|L Creative Group
 
   script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
   script.

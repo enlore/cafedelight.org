@@ -1,16 +1,27 @@
 /* lol hai
  **********/
+@tablet: 768px;
+
+@red: #DB0000;
+
+@heart: @red;
 
 .align-right { text-align: right; }
 .align-center { text-align: center; }
 
+body, html { height: 100%; }
 body {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    min-height: 600px;
-    background: url('/img/bg-1200.jpg') 0 0 no-repeat;
-    background-size: cover; }
+} 
 
+.wrappa {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background: url('/img/bg-1200.jpg') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -20px;
+}
 
 .nav.navbar-default {
     border-top: 10px solid rgba(255, 255, 255, 0.7);
@@ -41,6 +52,10 @@ body {
     min-height: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
+    
+    .glyphicon.glyphicon-heart {
+        color: @heart;
+    }
 
     .carousel {
         border: 2px solid grey; 
@@ -69,7 +84,17 @@ body {
     }
 }
 
-.footer.container {
+.footer {
     background: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    p { text-align: center; }
+}
+
+@media screen and (min-width: @tablet) {
+    .footer {
+        height: 40px;
+        margin-top: 20px;
+    }
 }
