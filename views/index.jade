@@ -5,10 +5,22 @@ block body
   .container.about-us
     .row
       .col-sm-8
-        img.img-responsive(src="http://placehold.it/700x400")
+        #carousel.carousel.slide(data-ride="carousel")
+          ol.carousel-indicators
+            li.active(data-target="#carousel", data-slide-to="0")
+            li.active(data-target="#carousel", data-slide-to="1")
+            li.active(data-target="#carousel", data-slide-to="2")
+
+          .carousel-inner
+            .item.active
+              img.img-responsive(src="http://placehold.it/700x400")
+            .item
+              img.img-responsive(src="http://placehold.it/700x400")
+            .item
+              img.img-responsive(src="http://placehold.it/700x400")
 
       .col-sm-4
-        p. We are a coffee shop.  We sell coffee.  It's cool.
+        p.copy We are a coffee shop.  We sell coffee.  It's cool.
 
   .container.menu
     .row
