@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Cafe de Light' });
+  res.render('index', { title: 'Cafe de Light - Espresso and Frappes by APSU' });
 };
 
 exports.menu = function (req, res) {
