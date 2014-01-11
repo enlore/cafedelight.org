@@ -1,8 +1,8 @@
 extends layout/base
 block body
-  .container.banner
+  #home.container.banner
 
-  .container.about-us
+  #about-us.container.about-us
     .row
       .col-sm-8
         #carousel.carousel.slide(data-ride="carousel")
@@ -13,16 +13,28 @@ block body
 
           .carousel-inner
             .item.active
-              img.img-responsive(src="http://placehold.it/700x400")
+              img.img-responsive(src="img/CDLSlideshow1.jpg")
             .item
-              img.img-responsive(src="http://placehold.it/700x400")
+              img.img-responsive(src="img/CDLSlideshow2.jpg")
             .item
-              img.img-responsive(src="http://placehold.it/700x400")
+              img.img-responsive(src="img/CDLSlideshow3.jpg")
 
       .col-sm-4
-        p.copy We are a coffee shop.  We sell coffee.  It's cool.
+        h2  We <span class="glyphicon glyphicon-heart"></span> coffee.
 
-  .container.menu
+        p.copy.
+          We are a coffee shop.  We sell coffee.  It's cool.
+          Id vitae ante vel condimentum auctor, aenean mattis vitae donec
+          turpis libero suspendisse, vel curabitur nunc lacinia, at pharetra
+          ipsum donec at suspendisse, libero nulla imperdiet curabitur lectus
+
+        p.copy.
+          phasellus rerum. Blandit aliquam eos amet, at sodales nunc nam tellus
+          quis vestibulum, rhoncus dolor in varius aenean proin volutpat. Nec
+          porta pellentesque eget, adipiscing et sodales a sociosqu orci,
+          sociosqu orci ac pellentesque vel, 
+
+  #menu.container.menu
     .row
       .col-sm-12
         table.table
@@ -99,7 +111,13 @@ block body
               td $3.75
               td $4.75
 
-  .container.location
+  #location.container.location
     .row
-      .col-sm-12
+      .col-sm-4
+        .address
+          p Cafe de Light
+          p 124 University Ave
+          p Clarksville, TN 37040
+
+      .col-sm-8
         #gmap.gmap-container
