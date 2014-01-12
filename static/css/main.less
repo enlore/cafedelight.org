@@ -10,8 +10,6 @@
 .align-center { text-align: center; }
 
 body, html { height: 100%; }
-body {
-} 
 
 .wrappa {
     padding-top: 100px;
@@ -21,6 +19,12 @@ body {
     min-height: 100%;
     height: auto;
     margin: 0 auto -20px;
+}
+
+.location.container,
+.about-us.container {
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .nav.navbar-default {
@@ -88,9 +92,11 @@ body {
 .footer {
     background: rgba(255, 255, 255, 0.8);
     margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     p { text-align: center; }
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: @tablet) {
