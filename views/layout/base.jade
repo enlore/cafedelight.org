@@ -27,7 +27,7 @@ head
 
   script(src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js")
 
-body(class="#{page_name}")
+body#skrollr-body(class="#{page_name}")
   //if lt IE 7
     p.chromeframe.
       You are using a seriously outdated browser.  Please, please
@@ -36,8 +36,12 @@ body(class="#{page_name}")
       improve your browsing experience (and make the lives of developers
       like me a ton easier).
 
-  .bean-hero
-  .wrappa
+  .bean-hero(data-0="background-position: 0px 0px", data-300="background-position: 0px 100px")
+    .lead.container
+      .col-sm-8.col-sm-offset-2
+        h1 Cafe de Light
+
+  .wrappa(data-300="background-attachment: fixed")
     nav.nav.navbar-default.navbar-fixed-top
       .container
         .navbar-header
@@ -77,6 +81,7 @@ body(class="#{page_name}")
   script(type="text/javascript", src="/js/vendor/bootstrap.min.js")
   script(type="text/javascript",
     src="https://maps.googleapis.com/maps/api/js?sensor=false")
+  script(type="text/javascript", src="/js/vendor/skrollr.min.js")
   script(type="text/javascript", src="/js/main.js")
 
   script.

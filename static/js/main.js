@@ -17,3 +17,7 @@ function mapInit() {
 
 
 google.maps.event.addDomListener(window, 'load', mapInit)
+
+var s = skrollr.init()
+if (s)
+   console.log(s) 
