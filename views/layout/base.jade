@@ -27,7 +27,7 @@ head
 
   script(src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js")
 
-body
+body(class="#{page_name}")
   //if lt IE 7
     p.chromeframe.
       You are using a seriously outdated browser.  Please, please
@@ -36,6 +36,7 @@ body
       improve your browsing experience (and make the lives of developers
       like me a ton easier).
 
+  .bean-hero
   .wrappa
     nav.nav.navbar-default.navbar-fixed-top
       .container
