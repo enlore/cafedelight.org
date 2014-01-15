@@ -1,12 +1,12 @@
 extends layout/base
 block banner
-  .bean-hero(data-0="background-position: 0px -40px", data-400="background-position: 0px 100px")
+  #bean-hero.bean-hero(data-anchor-target="#bag-wrap", data-top-top="background-position: 0px 0px", data-bottom-top="background-position: 0px -200px")
     .lead.container
       .logo.col-sm-8.col-sm-offset-2
         img.img-responsive.center(src="/img/logo.png")
 
 block body
-  .bag-wrap(data-0="background-attachment: scroll", data-400="background-attachment: fixed")
+  #bag-wrap.bag-wrap(data-0="background-attachment: scroll", data-top="background-attachment: fixed")
     #about-us.container.about-us
       .row
         .col-sm-8
