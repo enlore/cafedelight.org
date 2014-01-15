@@ -14,6 +14,8 @@
 body, html { height: 100%; }
 
 h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
+p, span { font-family: Gudea, sans-serif; }
+.container p { font-size: 18px; }
 
 .bean-hero {
     display: none;
@@ -39,11 +41,15 @@ h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
 }
 
 .wrappa {
+    height: auto;
+    margin: 0 auto -20px;
+}
+
+.bag-wrap {
     padding-top: 80px;
     padding-bottom: 20px;
     background: url('/img/bg-1600.jpg') 0 0 no-repeat;
-    height: auto;
-    margin: 0 auto -20px;
+    height: 100%;
 }
 
 .location.container,
@@ -59,8 +65,20 @@ h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
     background: rgba(0, 0, 0, 0.8);
     background-clip: padding-box;
     top: 0;
+    a { 
+        font-family: Courgette, cursive;
+        font-size: 20px;
+     }
+
+    .nav.navbar-nav > li >  a {
+        color: #fff;
+    }
+
     .nav.navbar-nav > .active > a {
         background-color: rgba(255, 255, 255, 0.7);
+    }
+    .navbar-brand {
+        font-family: Courgette, cursive; 
     }
 }
 
@@ -99,8 +117,19 @@ h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
 }
 
 .menu.container {
-    min-height: 400px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+    padding: 2em;
+}
+
+.menu.bag-wrap {
+    padding-top: 150px;
+}
+
+@media screen and (min-width: @tablet) {
+    .menu.bag-wrap {
+        padding-top: 150px;
+    }
 }
 
 .location.container {
@@ -112,11 +141,18 @@ h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
         border: 2px solid grey;
         box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
     }
+    .address {
+        text-align: center; 
+        p {
+            font-size: 26px;
+        }
+    }
 }
 
 .footer {
     background: rgba(255, 255, 255, 0.8);
     margin-top: 10px;
+    height: 20px;
     p { text-align: center; }
     .container {
         padding-top: 10px;
