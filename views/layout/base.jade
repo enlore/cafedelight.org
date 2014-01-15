@@ -52,16 +52,24 @@ body#skrollr-body(class="#{page_name}")
 
         #header-nav.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-left
-            li.active
-              a(href="/") Home
+            -if (page_name == 'index')
+              li.active
+                a(href="/") Home
+            -else
+              li
+                a(href="/") Home
             li
               a(href="/#about-us") About Us
 
           ul.nav.navbar-nav.navbar-right
             li
               a(href="/#location") Location
-            li
-              a(href="/menu") Menu
+            -if (page_name == 'menu')
+              li.active
+                a(href="/menu") Menu
+            -else
+              li
+                a(href="/menu") Menu
 
     block body
 
