@@ -39,7 +39,7 @@ $(document).ready(function () {
             s.animateTo($('#about-us').offset().top - 65)
     })
     $('#location-link').click(function (e) {
-            s.animateTo($('#location').offset().top - 65)
+            s.animateTo($('#location').offset().top - 85)
     })
     $('#hours-link').click(function (e) {
             s.animateTo($('#stuff').offset().top - 95)
