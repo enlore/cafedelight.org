@@ -7,11 +7,12 @@
 
 @red: #AF0800;
 @turqoise: #4BB9CD;
+@brown: #977E67; 
 
 @heart: @red;
 
-::selection { background: #977E67; color: #fff; }
-::-moz-selection { background: #977E67; color: #fff; }
+::selection { background: @brown; color: #fff; }
+::-moz-selection { background: @brown; color: #fff; }
 
 .align-right { text-align: right; }
 .align-center { text-align: center; }
@@ -134,7 +135,6 @@ table, p, span { font-family: Gudea, sans-serif; }
 }
 
 .stuff.container {
-    background: #763D17;
     background: rgba(118, 61, 23, 0.8);
     margin-top: 2em;
     color: @turqoise;
@@ -183,11 +183,6 @@ table, p, span { font-family: Gudea, sans-serif; }
     min-height: 400px;
     padding-bottom: 20px;
     margin-top: 2em;
-    .gmap-container {
-        min-height: 474px;
-        border: 2px solid grey;
-        box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
-    }
     .address {
         font-family: Gudea, sans-serif;
         text-align: center; 
@@ -198,14 +193,34 @@ table, p, span { font-family: Gudea, sans-serif; }
     }
 }
 
+.gmap-container {
+    height: 474px;
+    border: 2px solid grey;
+    box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
+}
+
+@media screen and (min-width: @tablet) {
+    .gmap-container {
+        height: 292px;
+    }
+}
+@media screen and (min-width: @medium) {
+    .gmap-container {
+        height: 389px; 
+    }
+}
+@media screen and (min-width: @large) {
+    .gmap-container {
+        height: 477px;
+    }
+}
+
 .footer {
-    background: rgba(255, 255, 255, 0.8);
     background: url('/img/bean-strip.jpg');
     margin-top: 10px;
-    height: 20px;
     color: #fff;
     a { color: @red; }
-    p { text-align: center; }
+    p { text-align: center; background: rgba(0, 0, 0, 0.8); }
     .container {
         padding-top: 10px;
         padding-bottom: 10px;
