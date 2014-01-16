@@ -18,10 +18,9 @@ function mapInit() {
 
 google.maps.event.addDomListener(window, 'load', mapInit)
 
-var s = skrollr.init({forceHeight: false})
 
-if ($(window).width() <= 768) {
-  s.destroy()
+if ($(window).width() > 768) {
+    s = skrollr.init({forceHeight: false})
 }
 
 $(window).resize(function () {
