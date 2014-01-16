@@ -5,7 +5,7 @@
 @medium: 992px;
 @large: 1200px;
 
-@red: #DB0000;
+@red: #AF0800;
 
 @heart: @red;
 
@@ -19,6 +19,15 @@
 
 html, body { height: 100%; }
 h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
+
+.welcome,
+.visit-cta {
+    font-family: Courgette, cursive;
+    font-size: 70px;
+    text-shadow: 4px 4px 0px #000;
+    font-weight: bold;
+    color: @red;
+}
 
 p, span { font-family: Gudea, sans-serif; }
 
@@ -98,6 +107,10 @@ p, span { font-family: Gudea, sans-serif; }
     background: rgba(255, 255, 255, 0.8);
     padding-top: 20px;
     padding-bottom: 20px;
+
+    .welcome {
+        margin-bottom: 0.8em; 
+    }
     
     .glyphicon.glyphicon-heart {
         color: @heart;
@@ -113,6 +126,13 @@ p, span { font-family: Gudea, sans-serif; }
     .copy {
         margin-top: 1em; 
     }
+}
+
+.stuff.container {
+    background: #763D17;
+    background: rgba(118, 61, 23, 0.8);
+    height: 600px;
+    margin-top: 2em;
 }
 
 .menu.container {
@@ -148,12 +168,14 @@ p, span { font-family: Gudea, sans-serif; }
     background: rgba(255, 255, 255, 0.8);
     min-height: 400px;
     padding-bottom: 20px;
+    margin-top: 2em;
     .gmap-container {
         min-height: 474px;
         border: 2px solid grey;
         box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
     }
     .address {
+        font-family: Gudea, sans-serif;
         text-align: center; 
         margin-bottom: 2em;
         p {
