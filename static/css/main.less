@@ -12,6 +12,10 @@
 .align-right { text-align: right; }
 .align-center { text-align: center; }
 .center { margin: 0 auto; }
+.grey-border {
+    border: 2px solid grey; 
+    box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
+}
 
 html, body { height: 100%; }
 h1,h2,h3,h4,h5,h6 { font-family: Courgette, cursive; }
@@ -92,7 +96,6 @@ p, span { font-family: Gudea, sans-serif; }
 
 .about-us.container {
     background: rgba(255, 255, 255, 0.8);
-    min-height: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
     
@@ -146,12 +149,13 @@ p, span { font-family: Gudea, sans-serif; }
     min-height: 400px;
     padding-bottom: 20px;
     .gmap-container {
-        min-height: 400px;
+        min-height: 474px;
         border: 2px solid grey;
         box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
     }
     .address {
         text-align: center; 
+        margin-bottom: 2em;
         p {
             font-size: 26px;
         }
