@@ -33,6 +33,8 @@ $(document).ready(function () {
       }
     })
 
+    console.log(s)
+
     $('#about-us-link').click(function (e) {
             s.animateTo($('#about-us').offset().top - 65)
     })
