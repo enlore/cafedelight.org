@@ -49,26 +49,23 @@ body(class="#{page_name}")
           span.icon-bar
         a.navbar-brand.visible-xs(href="/") Cafe de Light
 
+
       #header-nav.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-left
-          -if (page_name == 'index')
-            li.active
-              a(href="/") Home
-          -else
-            li
-              a(href="/") Home
           li
-            a(href="/#about-us") About Us
+            a#home-link(href="/") Home
+          li
+            a#about-us-link(href="/#about-us") About Us
 
         ul.nav.navbar-nav.navbar-right
           li
-            a(href="/#location") Location
-          -if (page_name == 'menu')
-            li.active
-              a(href="/menu") Menu
-          -else
-            li
-              a(href="/menu") Menu
+            a#hours-link(href="/#stuff") Hours
+          li
+            a#location-link(href="/#location") Location
+          li
+            a(href="/menu") Menu
+    
+        img.crown.img-responsive(src='/img/mug-graphic.png')
 
   block banner
 
