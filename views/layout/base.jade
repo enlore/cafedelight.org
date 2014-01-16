@@ -28,7 +28,8 @@ head
 
   script(src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js")
 
-body#skrollr-body(class="#{page_name}")
+body(class="#{page_name}")
+  
   //if lt IE 7
     p.chromeframe.
       You are using a seriously outdated browser.  Please, please
@@ -37,42 +38,44 @@ body#skrollr-body(class="#{page_name}")
       improve your browsing experience (and make the lives of developers
       like me a ton easier).
 
+
+  nav.nav.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target="#header-nav")
+          span.sr-only Toggle nav
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.visible-xs(href="/") Cafe de Light
+
+      #header-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          -if (page_name == 'index')
+            li.active
+              a(href="/") Home
+          -else
+            li
+              a(href="/") Home
+          li
+            a(href="/#about-us") About Us
+
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="/#location") Location
+          -if (page_name == 'menu')
+            li.active
+              a(href="/menu") Menu
+          -else
+            li
+              a(href="/menu") Menu
+
   block banner
 
-  .wrappa
-    nav.nav.navbar-default.navbar-fixed-top
-      .container
-        .navbar-header
-          button.navbar-toggle(type="button", data-toggle="collapse", data-target="#header-nav")
-            span.sr-only Toggle nav
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.visible-xs(href="/") Cafe de Light
-
-        #header-nav.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-left
-            -if (page_name == 'index')
-              li.active
-                a(href="/") Home
-            -else
-              li
-                a(href="/") Home
-            li
-              a(href="/#about-us") About Us
-
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href="/#location") Location
-            -if (page_name == 'menu')
-              li.active
-                a(href="/menu") Menu
-            -else
-              li
-                a(href="/menu") Menu
-
+  #bag-wrap.bag-wrap(data-0="background-attachment: scroll", data-top="background-attachment: fixed")
     block body
 
+  block footer
     .footer
       .container
         .row

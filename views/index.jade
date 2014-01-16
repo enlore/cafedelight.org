@@ -6,37 +6,36 @@ block banner
         img.img-responsive.center(src="/img/logo.png")
 
 block body
-  #bag-wrap.bag-wrap(data-0="background-attachment: scroll", data-top="background-attachment: fixed")
-    #about-us.container.about-us
-      .row
-        .col-sm-8
-          #carousel.carousel.slide(data-ride="carousel")
-            ol.carousel-indicators
-              li.active(data-target="#carousel", data-slide-to="0")
-              li.active(data-target="#carousel", data-slide-to="1")
-              li.active(data-target="#carousel", data-slide-to="2")
+  #about-us.container.about-us
+    .row
+      .col-sm-8
+        #carousel.carousel.slide(data-ride="carousel")
+          ol.carousel-indicators
+            li.active(data-target="#carousel", data-slide-to="0")
+            li.active(data-target="#carousel", data-slide-to="1")
+            li.active(data-target="#carousel", data-slide-to="2")
 
-            .carousel-inner
-              .item.active
-                img.img-responsive(src="img/CDLSlideshow1.jpg")
-              .item
-                img.img-responsive(src="img/CDLSlideshow2.jpg")
-              .item
-                img.img-responsive(src="img/CDLSlideshow3.jpg")
+          .carousel-inner
+            .item.active
+              img.img-responsive(src="img/CDLSlideshow1.jpg")
+            .item
+              img.img-responsive(src="img/CDLSlideshow2.jpg")
+            .item
+              img.img-responsive(src="img/CDLSlideshow3.jpg")
 
-        .col-sm-4
-          h2  We <span class="glyphicon glyphicon-heart"></span> coffee.
+      .col-sm-4
+        h2  We <span class="glyphicon glyphicon-heart"></span> coffee.
 
-          p.copy.
-            We are a coffee shop.  We sell coffee.  It's cool.
+        p.copy.
+          We are a coffee shop.  We sell coffee.  It's cool.
 
-    #location.container.location
-      .row
-        .col-sm-4
-          .address
-            p Cafe de Light
-            p 124 University Ave
-            p Clarksville, TN 37040
+  #location.container.location
+    .row
+      .col-sm-4
+        .address
+          p Cafe de Light
+          p 124 University Ave
+          p Clarksville, TN 37040
 
-        .col-sm-8
-          #gmap.gmap-container
+      .col-sm-8
+        #gmap.gmap-container
