@@ -54,7 +54,10 @@ table, p, span { font-family: Gudea, sans-serif; }
             color: #fff;
             font-size: 22px;
         }
-        p { color: #fff; }
+        .disclaimer { 
+            color: #fff;
+            font-size: 14px;
+        }
     }
 }
 
@@ -62,11 +65,11 @@ table, p, span { font-family: Gudea, sans-serif; }
 @media screen and (min-width: @tablet) {
     .index .bean-hero {
         .logo {
-            margin-top: 110px;
+            margin-top: 130px;
             z-index: 10000;
             display: block;
             h2 {
-                font-size: 30px;
+                font-size: 26px;
             }
         }
     } 
@@ -76,6 +79,7 @@ table, p, span { font-family: Gudea, sans-serif; }
     padding-top: 80px;
     padding-bottom: 20px;
     background: url('/img/bg-1600.jpg') 0 0 no-repeat;
+    //background-attachment: fixed;
 }
 
 .location.container,
@@ -159,6 +163,7 @@ table, p, span { font-family: Gudea, sans-serif; }
     background: rgba(118, 61, 23, 0.8);
     margin-top: 2em;
     margin-bottom: 2em;
+    padding-bottom: 20px;
     color: @turqoise;
     h2 { text-shadow: 2px 2px 0 #000; }
     .hours {
@@ -212,7 +217,6 @@ table, p, span { font-family: Gudea, sans-serif; }
 
 .location.container {
     background: rgba(255, 255, 255, 0.8);
-    min-height: 400px;
     padding-bottom: 20px;
     margin-top: 2em;
     .phone-number {
