@@ -37,13 +37,21 @@ block body
           full of flavor! Stop by whenever you’d like; We enjoy meeting new,
           friendly faces! Thank you for your business! 
 
+  #stuff.container.stuff
+    .row
+      .col-sm-12
+
   #location.container.location
     .row
-      .col-sm-4
-        .address
-          p Cafe de Light
-          p 124 University Ave
-          p Clarksville, TN 37040
+      .col-sm-12
+        h1.text-center Come visit us!
+        h2.text-center.address.
+            Cafe de Light &#124; 124 University Ave. &#124; Clarksville, TN 37040
 
-      .col-sm-8
+    .row
+      .col-sm-4.hidden-xs
+        img.grey-border.img-responsive(src="/img/storefront.jpg")
+
+      .col-sm-8.col-xs-12
         #gmap.gmap-container
+
