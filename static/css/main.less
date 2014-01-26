@@ -7,7 +7,7 @@
 
 @red: #AF0800;
 @turqoise: #4BB9CD;
-@brown: #977E67; 
+@brown: #977E67;
 
 @heart: @red;
 
@@ -18,7 +18,7 @@
 .align-center { text-align: center; }
 .center { margin: 0 auto; }
 .grey-border {
-    border: 2px solid grey; 
+    border: 2px solid grey;
     box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
 }
 
@@ -51,12 +51,12 @@ table, p, span { font-family: Gudea, sans-serif; }
     .logo {
         max-height: 100%;
         img { max-height: 100%; }
-        margin-top: 70px;
+        margin-top: 120px;
         h2 {
             color: #fff;
             font-size: 22px;
         }
-        .disclaimer { 
+        .disclaimer {
             color: #fff;
             font-size: 14px;
         }
@@ -74,13 +74,13 @@ table, p, span { font-family: Gudea, sans-serif; }
                 font-size: 26px;
             }
         }
-    } 
+    }
 }
 
 .bag-wrap {
     padding-top: 80px;
     padding-bottom: 20px;
-    background: url('/img/bg-1600.jpg') 0 0 repeat-y;
+    background: url('/img/bg-1600.jpg') 0 0;
     background-attachment: fixed;
 }
 
@@ -110,9 +110,17 @@ table, p, span { font-family: Gudea, sans-serif; }
     background: rgba(0, 0, 0, 0.8);
     background-clip: padding-box;
     top: 0;
-    a { 
+    a {
         font-family: Courgette, cursive;
         font-size: 20px;
+     }
+
+     .navbar-toggle {
+        background: @red;
+        &:hover,
+        &:active {
+            background: lighten(@red, 15%);
+        }
      }
 
     .nav.navbar-nav > li >  a {
@@ -123,30 +131,33 @@ table, p, span { font-family: Gudea, sans-serif; }
     .nav.navbar-nav > .active > a {
         background-color: rgba(255, 255, 255, 0.7);
     }
+
     .navbar-brand {
-        font-family: Courgette, cursive; 
+        font-family: Courgette, cursive;
     }
+
     .brand.navbar-brand {
         margin: 0 auto;
         float: none;
         width: 200px;
         text-align: center;
     }
+
     .fb-link.navbar-brand {
-        padding: 8px 8px; 
+        padding: 8px 8px;
     }
 }
 
 
 @media screen and (min-width: 768px) {
     .nav.navbar-default {
-        top: 30px; 
+        top: 30px;
 
         .fb-link.navbar-brand {
-            padding-left: 15px; 
+            padding-left: 15px;
             padding-right: 30px;
         }
-    } 
+    }
 }
 
 .banner.container {
@@ -161,7 +172,7 @@ table, p, span { font-family: Gudea, sans-serif; }
     color: #fff;
     text-shadow: 1px 1px 0px #000;
     .disclaimer {
-        font-size: 12px; 
+        font-size: 12px;
         display: block;
     }
 }
@@ -178,7 +189,7 @@ table, p, span { font-family: Gudea, sans-serif; }
     padding-bottom: 20px;
 
     .welcome {
-        margin-bottom: 0.8em; 
+        margin-bottom: 0.8em;
     }
 
     .caption {
@@ -186,22 +197,22 @@ table, p, span { font-family: Gudea, sans-serif; }
         margin-top: 1em;
         font-size: 22px;
     }
-    
+
 
     .carousel {
-        border: 2px solid grey; 
+        border: 2px solid grey;
         box-shadow: -10px 10px 13px -8px rgb(100, 100, 100);
         max-width: 700px;
         margin: 0 auto;
     }
 
     .copy {
-        margin-top: 1em; 
+        margin-top: 1em;
         margin-bottom: 1em;
         line-height: 1.8em;
     }
     .copy.second {
-        margin-top: 2em; 
+        margin-top: 2em;
     }
 }
 
@@ -213,12 +224,12 @@ table, p, span { font-family: Gudea, sans-serif; }
     color: @turqoise;
     h2 { text-shadow: 2px 2px 0 #000; }
     .hours {
-        font-size: 22px; 
+        font-size: 22px;
         thead > tr > th { border-color: #672900; }
         tbody > tr > td { border-color: #672900; }
     }
     .space-available {
-        font-size: 22px; 
+        font-size: 22px;
     }
 }
 
@@ -231,7 +242,7 @@ table, p, span { font-family: Gudea, sans-serif; }
 .menu.menu-wrap {
     padding-top: 100px;
     .menu-header {
-        height: 200px; 
+        height: 200px;
         background-color: #fff;
         background: url('/img/espresso_drip.gif') center center no-repeat;
         background-size: cover;
@@ -277,7 +288,7 @@ img.kaldi {
     margin-top: 2em;
     .phone-number {
         margin-bottom: 1em;
-        font-family: Gudea, sans-serif; 
+        font-family: Gudea, sans-serif;
     }
     .address {
         font-family: Gudea, sans-serif;
@@ -300,7 +311,7 @@ img.kaldi {
 }
 @media screen and (min-width: @medium) {
     .gmap-container {
-        height: 389px; 
+        height: 389px;
     }
 }
 @media screen and (min-width: @large) {
