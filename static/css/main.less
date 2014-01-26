@@ -126,11 +126,26 @@ table, p, span { font-family: Gudea, sans-serif; }
     .navbar-brand {
         font-family: Courgette, cursive; 
     }
+    .brand.navbar-brand {
+        margin: 0 auto;
+        float: none;
+        width: 200px;
+        text-align: center;
+    }
+    .fb-link.navbar-brand {
+        padding: 8px 8px; 
+    }
 }
+
 
 @media screen and (min-width: 768px) {
     .nav.navbar-default {
         top: 30px; 
+
+        .fb-link.navbar-brand {
+            padding-left: 15px; 
+            padding-right: 30px;
+        }
     } 
 }
 
